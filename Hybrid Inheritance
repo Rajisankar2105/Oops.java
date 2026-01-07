@@ -1,0 +1,27 @@
+class Father{
+    void walking(){
+        System.out.println("Walk");
+    }
+}
+class Child1 extends Father {
+    void cook(){
+        System.out.println("Cook");
+    }
+}
+class Child2 extends Father{
+    void game(){
+       System.out.println("Free fire");
+    }
+}
+public class Main{
+    public static void main(String []args){
+     System.out.print("Child1:");
+     Child1 c1 =new Child1();
+     c1.walking();
+     c1.cook();
+     System.out.print("Child2:");
+     Child2 c2 =new Child2();
+     c2.walking();
+     c2.game();
+    }
+}
