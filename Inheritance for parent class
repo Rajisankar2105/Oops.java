@@ -11,6 +11,6 @@ class Smart_phone extends Button_phone{
 public class Main{
     public static void main(String []args){
         Smart_phone sb=new Smart_phone();
-     sb.message();
+     sb.call();
     }
 }
