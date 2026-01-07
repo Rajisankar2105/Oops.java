@@ -1,0 +1,12 @@
+public class Main{
+    static void add(int a){
+        System.out.print("Integer value is:"+a);
+        }
+        static void add(char a){
+            System.out.print("Character value is:"+a);
+        }
+    public static void main(String []args){
+        add(5);
+     
+    }
+}
