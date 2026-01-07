@@ -1,0 +1,17 @@
+class Button_phone{
+    void call(){
+        System.out.println("Ring Ring Ring");
+    }
+}
+class Smart_phone extends Button_phone{
+    void message(){
+       System.out.println("Hi how are you");
+    }
+}
+public class Main{
+    public static void main(String []args){
+        Smart_phone sb=new Smart_phone();
+        sb.call();
+     sb.message();
+    }
+}
