@@ -1,0 +1,23 @@
+class Father{
+    void walking(){
+        System.out.println("Walk");
+    }
+}
+class Mother {
+    void cook(){
+        System.out.println("Cook");
+    }
+}
+class Son extends Father,Mother{
+    void game(){
+       System.out.println("Free fire");
+    }
+}
+public class Main{
+    public static void main(String []args){
+        Son sb=new Son();
+        sb.walking();
+     sb.cook();
+     sb.game();
+    }
+}
