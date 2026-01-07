@@ -1,0 +1,18 @@
+abstract class Demo{
+   abstract void hi();
+   void cse(){
+        System.out.print("cse department");
+    }
+}
+class Hall extends Demo{
+    void hi(){
+        System.out.print(" Abstract method ");
+    }
+}
+public class Main{
+   public static void main(String []args){
+        Hall h=new Hall();
+     h.hi();
+     h.cse();
+    }
+}
