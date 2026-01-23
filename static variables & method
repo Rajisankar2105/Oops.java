@@ -1,0 +1,29 @@
+class Student{
+    String name;
+  static int count=0;
+ Student(String name){
+        this.name=name;
+        count++;
+    }
+    public void displayInfo(){
+        System.out.println("Name: "+ name );
+    }
+
+public static void displayCount(){
+    System.out.println("Total students created:" + count);
+}
+}
+
+public class Demo{
+    public static void main(String []args){
+     Student s1=new Student("Ravi");
+     Student s2=new Student("Anita");
+     Student s3=new Student("Ram");
+     s1.displayInfo();
+     s2.displayInfo();
+     s3.displayInfo();
+     
+     Student.displayCount();
+    
+}
+}
