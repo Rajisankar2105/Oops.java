@@ -1,0 +1,19 @@
+class MultiObject{
+    private String name;
+    public MultiObject(String name){
+        this.name=name;
+    }
+    public void showMessage(){
+        System.out.println("Hello! My name is"+name);
+    }
+}
+public class SingletonDemo{
+    public static void main(String []args){
+        MultiObject obj1=new MultiObject("Object One");
+        MultiObject obj2=new MultiObject("Object Two");
+        MultiObject obj3=new MultiObject("Object Three");
+        obj1.showMessage();
+        obj2.showMessage();
+        obj3.showMessage();
+    }
+}
