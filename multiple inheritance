@@ -1,0 +1,21 @@
+interface Printable{
+    void print();
+}
+interface showable{
+    void show();
+}
+class Demo implements Printable,showable{
+    public void print(){
+        System.out.println("Printing from printable interface...");
+    }
+    public void show(){
+        System.out.println("showing from showable interface...");
+    }
+}
+public class MIDemo{
+    public static void main(String []args){
+        Demo obj=new Demo();
+        obj.print();
+        obj.show();
+    }
+}
