@@ -1,0 +1,23 @@
+class Student{
+    private String name;
+    private int age;
+    
+    public Student(String name,int age){
+        this.name=name;
+        this.age=age;
+    }
+    public void display(){
+        System.out.println("Name: "+name+", Age: "+age);
+    }
+}
+public class SingletonDemo{
+    public static void main(String []args){
+        Student[]students=new Student[3];
+    students[0]=new Student("Alice",20);
+    students[1]=new Student("Bob",23);
+    students[2]=new Student("Charlie",18);
+    for(int i=0;i<students.length;i++){
+        students[i].display();
+    }
+}
+}
